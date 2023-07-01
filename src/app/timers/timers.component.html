@@ -1,0 +1,54 @@
+<div class="content-row">
+    <div class="left-column">
+      <div class="button-container" > <!-- (click)="toggleTimer('timer1')" [ngClass]="{'running': timers['timer1'].timerRunning, 'stopped': !timers['timer1'].timerRunning}" -->
+        <div class="timer-button">
+          <p>Línea Mecánica Detenida</p>
+          <!-- {{ getButtonLabel(timers['timer1']) }} -->
+          <div class="hora detención"><!-- Hora de Detención: {{ timers['timer1'].fechainicio }} --></div>
+          <div></div>
+          <div class="hora actual">Hora en que Reactiva: <!-- {{ timers['timer1'].fechafin }} --> </div>
+          <div></div>
+          <div>Tiempo Detenido:<!-- {{ getElapsedTimeDifference(timers['timer1']) }} --> </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="button-container" ><!-- (click)="toggleTimer('timer2')" [ngClass]="{'running': timers['timer2'].timerRunning, 'stopped': !timers['timer2'].timerRunning}" -->
+        <div class="timer-button">
+          <p>Línea Sin Madera</p>
+          <!-- {{ getButtonLabel(timers['timer2']) }} -->
+          <div class="hora inicio">Hora de Inicio: <!-- {{ timers['timer2'].fechainicio }} --> </div>
+          <div></div>
+          <div class="hora fin">Hora de Fin: <!-- {{ timers['timer2'].fechafin }} --> </div>
+          <div></div>
+          <div>Tiempo Total sin Madera: <!-- {{ getElapsedTimeDifference(timers['timer2']) }} --> </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="middle-column">
+      <div class="button-container">
+        <div class="timer-button button-inactive" ><!-- (click)="aumentarContador('biTrenGlobulus')" -->
+          BiTren Glóbulus <span><!-- {{ contadorBiTrenGlobulus }} --></span>
+        </div>
+      </div>
+      <div class="button-container">
+        <div class="timer-button button-inactive" > <!-- (click)="aumentarContador('camionGlobulus')" -->
+          Camión Externo Glóbulus <span><!-- {{ contadorCamionGlobulus }} --></span>
+        </div>
+      </div>
+    </div>
+    <div class="right-column">
+      <div class="button-container">
+        <div class="timer-button button-inactive" ><!-- (click)="aumentarContador('biTrenNitens')" -->
+          BiTren Nitens <span><!-- {{ contadorBiTrenNitens }} --></span>
+        </div>
+      </div>
+      <div class="button-container">
+        <div class="timer-button button-inactive" ><!-- (click)="aumentarContador('camionNitens')" -->
+          Camión Externo Nitens <span><!-- {{ contadorCamionNitens }} --></span>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>

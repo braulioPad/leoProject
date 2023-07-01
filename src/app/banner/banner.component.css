@@ -1,0 +1,16 @@
+.top-row {
+  font-size: 14px;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #33691e;
+  padding: 10px;
+  color: white;
+}
+
+.logo-container img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}

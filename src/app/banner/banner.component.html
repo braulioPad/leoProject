@@ -1,0 +1,21 @@
+    <div class="top-row">
+      <img src="assets/logo.png" alt="Logo de la empresa" class="logo">
+      <button mat-raised-button (click)="abrirDialogo()">Lanzar modal</button>
+      <button class="btn btn-primary" > <!-- (click)="restarUnoBiTrenGlobulus()" -->
+        <i class="fa fa-minus"></i> Restar BitrenGlobulus
+      </button>
+
+      <button class="btn btn-primary" ><!-- (click)="restarUnoBiTrenNitens()" -->
+        <i class="fa fa-minus"></i> Restar Bitren Nitens
+      </button>
+
+      <button class="btn btn-primary" ><!-- (click)="restarUnoCamionGlobulus()" -->
+        <i class="fa fa-minus"></i> Restar Camión Glóbulus
+      </button>
+      
+       <button class="btn btn-primary"> <!--(click)="restarUnoCamionNitens()"> -->
+        <i class="fa fa-minus"></i> Restar Camión Nitens
+      </button>
+      <div class="clock">
+        {{ currentDateTime }}  
+      </div>
